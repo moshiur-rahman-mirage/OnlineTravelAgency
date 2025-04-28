@@ -41,7 +41,18 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-gateway</artifactId> <!-- ✅ Reactive Gateway -->
+		</dependency>
+		<!-- Spring Cloud Eureka Client -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
+		<!-- Spring Cloud LoadBalancer -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
 		</dependency>
 
 		<dependency>
