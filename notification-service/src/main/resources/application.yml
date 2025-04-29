@@ -1,0 +1,31 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: notification-service
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: otanotification
+      username: admin
+      password: "123456"
+      authentication-database: otanotification
+
+
+  config:
+    import: optional:configserver:http://localhost:8888
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG  # Log MongoTemplate operations
+    org.springframework.data.mongodb.repository.query: DEBUG    # Log MongoRepository queries
