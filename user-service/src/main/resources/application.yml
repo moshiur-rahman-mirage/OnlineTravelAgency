@@ -35,3 +35,4 @@ logging:
     org.hibernate.SQL: DEBUG  # Log SQL queries
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE  # Log bound parameters
     org.springframework.data.jpa.repository.query: DEBUG  # Log JPA repository queries
+    root: DEBUG
